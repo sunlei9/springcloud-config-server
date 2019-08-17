@@ -1,0 +1,12 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://peer1:1000/eureka/,http://peer2:1001/eureka/
+  instance:
+    prefer-ip-address: true  #使用ip注册到注册中心
+    instance-id: user-consumer   #注册中心显示的服务的名字
+server:
+  port: 3000
+spring:
+  application:
+    name: user-consumer
